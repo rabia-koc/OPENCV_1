@@ -9,10 +9,10 @@ fourrc = cv2.VideoWriter_fourcc(*'XVID')  # görüntü çekiyorum ve bunun kodey
 # sonra boş bir şablon oluşturuyoruz ki aldığımız görüntüyü yazalım.
 
 out = cv2.VideoWriter("dronegri.avi", fourrc, 30.0, (640, 480))
-# 1.parametre oluşturacğımız görüntü ismi.
-# 2. parametre kodeyi
-# 3. parametre FPS değeri: kamera değeri
-# 4. ise görüntü boyutlandırma
+# 1.parametre dosya ismi.
+# 2. parametre dosya uzantısı
+# 3. parametre konumu
+# 4. ise saniyedeki çerçeve sayısı ve çözünürlüğü
 
 # görüntüyü açıyoruz.
 while cam.isOpened():
